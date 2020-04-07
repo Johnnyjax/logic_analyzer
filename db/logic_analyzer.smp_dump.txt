@@ -1,0 +1,72 @@
+
+State Machine - |logic_analyzer_top|debounce:debounce_unit|state_reg
+Name state_reg.wait1 state_reg.one state_reg.wait0 state_reg.zero 
+state_reg.zero 0 0 0 0 
+state_reg.wait0 0 0 1 1 
+state_reg.one 0 1 0 1 
+state_reg.wait1 1 0 0 1 
+
+State Machine - |logic_analyzer_top|logic_analyzer:logic_analyzer_unit|bin2bcd:bin2bcd_unit3|state_reg
+Name state_reg.done state_reg.op state_reg.idle 
+state_reg.idle 0 0 0 
+state_reg.op 0 1 1 
+state_reg.done 1 0 1 
+
+State Machine - |logic_analyzer_top|logic_analyzer:logic_analyzer_unit|bin2bcd:bin2bcd_unit2|state_reg
+Name state_reg.done state_reg.op state_reg.idle 
+state_reg.idle 0 0 0 
+state_reg.op 0 1 1 
+state_reg.done 1 0 1 
+
+State Machine - |logic_analyzer_top|logic_analyzer:logic_analyzer_unit|bin2bcd:bin2bcd_unit1|state_reg
+Name state_reg.done state_reg.op state_reg.idle 
+state_reg.idle 0 0 0 
+state_reg.op 0 1 1 
+state_reg.done 1 0 1 
+
+State Machine - |logic_analyzer_top|logic_analyzer:logic_analyzer_unit|bin2bcd:bin2bcd_unit0|state_reg
+Name state_reg.done state_reg.op state_reg.idle 
+state_reg.idle 0 0 0 
+state_reg.op 0 1 1 
+state_reg.done 1 0 1 
+
+State Machine - |logic_analyzer_top|logic_analyzer:logic_analyzer_unit|freq_counter:freq_counter_unit3|state_reg
+Name state_reg.done state_reg.count state_reg.waite state_reg.idle 
+state_reg.idle 0 0 0 0 
+state_reg.waite 0 0 1 1 
+state_reg.count 0 1 0 1 
+state_reg.done 1 0 0 1 
+
+State Machine - |logic_analyzer_top|logic_analyzer:logic_analyzer_unit|freq_counter:freq_counter_unit2|state_reg
+Name state_reg.done state_reg.count state_reg.waite state_reg.idle 
+state_reg.idle 0 0 0 0 
+state_reg.waite 0 0 1 1 
+state_reg.count 0 1 0 1 
+state_reg.done 1 0 0 1 
+
+State Machine - |logic_analyzer_top|logic_analyzer:logic_analyzer_unit|freq_counter:freq_counter_unit1|state_reg
+Name state_reg.done state_reg.count state_reg.waite state_reg.idle 
+state_reg.idle 0 0 0 0 
+state_reg.waite 0 0 1 1 
+state_reg.count 0 1 0 1 
+state_reg.done 1 0 0 1 
+
+State Machine - |logic_analyzer_top|logic_analyzer:logic_analyzer_unit|freq_counter:freq_counter_unit0|state_reg
+Name state_reg.done state_reg.count state_reg.waite state_reg.idle 
+state_reg.idle 0 0 0 0 
+state_reg.waite 0 0 1 1 
+state_reg.count 0 1 0 1 
+state_reg.done 1 0 0 1 
+
+State Machine - |logic_analyzer_top|logic_analyzer:logic_analyzer_unit|sampler:sampling_unit|state_reg
+Name state_reg.wr4_wait state_reg.wr3_wait state_reg.wr2_wait state_reg.wr1_wait state_reg.wr4 state_reg.wr3 state_reg.wr2 state_reg.wr1 state_reg.start state_reg.idle 
+state_reg.idle 0 0 0 0 0 0 0 0 0 0 
+state_reg.start 0 0 0 0 0 0 0 0 1 1 
+state_reg.wr1 0 0 0 0 0 0 0 1 0 1 
+state_reg.wr2 0 0 0 0 0 0 1 0 0 1 
+state_reg.wr3 0 0 0 0 0 1 0 0 0 1 
+state_reg.wr4 0 0 0 0 1 0 0 0 0 1 
+state_reg.wr1_wait 0 0 0 1 0 0 0 0 0 1 
+state_reg.wr2_wait 0 0 1 0 0 0 0 0 0 1 
+state_reg.wr3_wait 0 1 0 0 0 0 0 0 0 1 
+state_reg.wr4_wait 1 0 0 0 0 0 0 0 0 1 

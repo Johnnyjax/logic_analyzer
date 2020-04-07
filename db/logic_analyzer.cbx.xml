@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="logic_analyzer">
+		<CBX_INST_ENTRY INSTANCE_NAME="|logic_analyzer_top|logic_analyzer:logic_analyzer_unit|altera_dual_port_ram_sync:video_ram|altsyncram:ram_rtl_0" CBX_FILE_NAME="altsyncram_ell1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|logic_analyzer_top|logic_analyzer:logic_analyzer_unit|char_rom:char_unit|altsyncram:Mux7_rtl_0" CBX_FILE_NAME="altsyncram_od11.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
